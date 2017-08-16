@@ -441,6 +441,11 @@ bool addrToHash160(
             data[0] = 48;
         #endif
 
+
+        #if defined(BLUECOIN)
+                data[0] = 26;
+        #endif
+
         #if defined(BITCOIN)
             data[0] = 0;
         #endif

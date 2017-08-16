@@ -7,7 +7,7 @@ CPLUS = g++
 INC =                           \
         -I.                     \
         -DNDEBUG                \
-        -DBITCOIN               \
+        -DBLUECOIN               \
 
 #-DBITCOIN               \
 #-DDARKCOIN              \

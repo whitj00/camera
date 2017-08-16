@@ -316,6 +316,9 @@ static void parseBlock(
         #if defined LITECOIN
         #endif
 
+        #if defined BLUECOIN
+        #endif
+
         #if defined BITCOIN
         #endif
 
@@ -395,7 +398,11 @@ static void mapBlockChainFiles()
             "/.litecoin/"
         #endif
 
-        #if defined BITCOIN
+        #if defined BLUECOIN
+            "/.bluecoin/"
+        #endif
+
+#if defined BITCOIN
             "/.bitcoin/"
         #endif
 
@@ -548,6 +555,10 @@ static bool buildBlock(
 
     #if defined DARKCOIN
         0xbd6b0cbf
+    #endif
+
+    #if defined BLUECOIN
+        0xaaabf5fe
     #endif
 
     #if defined LITECOIN
